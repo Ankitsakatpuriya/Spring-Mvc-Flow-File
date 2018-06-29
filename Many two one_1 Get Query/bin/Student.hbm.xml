@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Student" table="Student">
+ 
+<id name="sid" column="sid"  />
+<property name="sname" column="sname" length="10"/>
+<many-to-one name="sobject" column="many2one" class="Com.Teacher" cascade="all" />
+ 
+</class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Area" table="Area">
+ 
+<id name="cid" column="cid"  />
+<property name="cname" column="cname" length="10"/>
+<many-to-one name="pobject" column="Vdummy" class="Com.City" cascade="all" />
+ 
+</class>
+</hibernate-mapping>

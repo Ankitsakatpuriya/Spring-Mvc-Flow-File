@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="Com.School" table="School">  
+        
+<id name="Sid" column="Sid"  />
+<property name="schoolname" column="schoolname" length="10"/>
+<property name="schoolcity" column="schoolcity"/>  
+
+<property name="fid" column="fid"  />
+
+    </class> 
+</hibernate-mapping>

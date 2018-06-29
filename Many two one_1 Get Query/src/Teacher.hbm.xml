@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Teacher" table="Teacher">
+ 
+<id name="tid" column="tid"  />
+<property name="tname" column="tname" length="10"/>
+ 
+</class>
+</hibernate-mapping>
